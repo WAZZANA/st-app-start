@@ -68,6 +68,7 @@ if selectfile == "Student Performance":
                     data=df, hue="gender")
     st.pyplot(fig)
 
+    st.header("แสดง Distribution ของคะแนน Reading")
     fig = sns.displot(data=df, x="reading score", hue="gender")
     st.pyplot(fig)
 else:
